@@ -1,0 +1,13 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	y1	y1	y1	y1
+					
+rshk_GBRZ	Res. import shock: Within-region (standardised)	0.0185***	0.0151**	0.0200***	0.0174**
+		(0.00626)	(0.00611)	(0.00706)	(0.00730)
+lgrshk_GBR_w1_5_SCI_cZ	Res. import shock: 1st to 5th social neighbour (SCI-weighted; standardised)	0.0153**	0.0213***	0.0162**	0.0222***
+		(0.00629)	(0.00602)	(0.00660)	(0.00648)
+lgrshk_GBR_w6_10_SCI_cZ	Res. import shock: 6th to 10th social neighbour (SCI-weighted; standardised)			-0.00610	-0.00967
+				(0.00645)	(0.00747)
+					
+Observations		22,231	22,231	22,231	22,231
+Standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

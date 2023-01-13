@@ -1,0 +1,18 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	Leave vote share	Leave vote share	Leave vote share	Leave vote share
+					
+rshk_GBRZ	Res. import shock: Within-region (standardised)	3.516***	3.978***	3.403***	3.914***
+		(0.962)	(1.151)	(0.925)	(1.107)
+lgrshk_GBR_w1_5_LCDi_cZ	Res. import shock: 1st to 5th geographic neighbour (LCDi-weighted; standardised)	-0.0319	-0.802	-0.497	-1.054
+		(1.149)	(1.224)	(0.916)	(1.096)
+lgrshk_GBR_w6_10_LCDi_cZ	Res. import shock: 6th to 10th geographic neighbour (LCDi-weighted; standardised			1.749	0.971
+				(1.429)	(1.462)
+					
+Observations		143	143	143	143
+R-squared		0.464	0.124	0.473	0.136
+r2_within		0.128		0.143	
+swf1			325.5		348.1
+swf2			212		193.2
+swf3					365.7
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

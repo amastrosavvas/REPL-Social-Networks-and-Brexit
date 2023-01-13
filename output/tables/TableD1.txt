@@ -1,0 +1,11 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	log. Social Connectedness Index (commuting discounted)	log. Social Connectedness Index (commuting discounted)	in_nn10_SCI_c	in_nn10_SCI_c
+					
+rshk_GBRZ	Res. import shock: Within-region (standardised)	0.0184	0.0177	-0.0104*	-0.0114**
+		(0.0195)	(0.0225)	(0.00533)	(0.00547)
+					
+Observations		1,430	1,430	20,306	20,306
+R-squared		0.475	0.002	0.002	0.002
+r2_within		0.00193	.	0.00164	.
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

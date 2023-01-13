@@ -1,0 +1,23 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	Leave vote share	Leave vote share	Leave vote share	Leave vote share
+					
+rshk_GBRZ	Res. import shock: Within-region (standardised)	1.086	0.807	1.083	1.866***
+		(1.432)	(1.480)	(1.438)	(0.677)
+lgrshk_GBR_w1_5_SCI_cZ	Res. import shock: 1st to 5th social neighbour (SCI-weighted; standardised)	1.995**	1.810**	2.103**	2.639***
+		(0.908)	(0.782)	(0.955)	(0.903)
+pc16_mnfZ	Employment share in mnf 1991 (standardised)	2.766	2.247	2.020	
+		(1.936)	(1.785)	(1.765)	
+criZ	Change in rel income vs median 1997-2016 (standardised)		-2.505**	-2.160***	
+			(0.917)	(0.725)	
+netinmigrants0216_pcZ	Net in-migration from 5 nrst. social neighbs 2002-2016 (% of 2001 pop; standardi			-1.884**	
+				(0.849)	
+pcp_aged65ovZ	Population share over 65 1991 (standardised)				-0.00292
+					(0.759)
+pcp_foreignZ	Population share foreign 1991 (standardised)				-6.210***
+					(0.452)
+					
+Observations		143	143	143	143
+R-squared		0.513	0.566	0.586	0.691
+r2_within		0.208	0.295	0.326	0.497
+Robust standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

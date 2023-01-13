@@ -1,0 +1,16 @@
+		(1)	(2)	(3)	(4)	(5)	(6)	(7)	(8)	(9)	(10)	(11)
+VARIABLES	LABELS	Intention to vote Leave	euRefVote	rshk_GBRZ	lgrshk_GBR_w1_5_SCI_cZ	/	Intention to vote Leave	euRefVote	rshk_GBRZ	lgrshk_GBR_w1_5_SCI_cZ	lgrshk_GBR_w6_10_SCI_cZ	/
+												
+rshk_GBRZ	Res. import shock: Within-region (standardised)	0.0506***	0.0414**				0.0549***	0.0476**				
+		(0.0173)	(0.0168)				(0.0195)	(0.0201)				
+lgrshk_GBR_w1_5_SCI_cZ	Res. import shock: 1st to 5th social neighbour (SCI-weighted; standardised)	0.0420**	0.0583***				0.0445**	0.0609***				
+		(0.0172)	(0.0165)				(0.0181)	(0.0178)				
+lgrshk_GBR_w6_10_SCI_cZ	Res. import shock: 6th to 10th social neighbour (SCI-weighted; standardised)						-0.0167	-0.0265				
+							(0.0177)	(0.0205)				
+												
+Observations		22,231	22,231	22,231	22,231	22,231	22,231	22,231	22,231	22,231	22,231	22,231
+swf1			352	352	352	352		355.3	355.3	355.3	355.3	355.3
+swf2			418.1	418.1	418.1	418.1		591.8	591.8	591.8	591.8	591.8
+swf3								603.5	603.5	603.5	603.5	603.5
+Robust standard errors in parentheses												
+*** p<0.01, ** p<0.05, * p<0.1												

@@ -1,0 +1,41 @@
+		(1)	(2)	(3)	(4)	(5)
+VARIABLES	LABELS	Intention to vote Leave	Intention to vote Leave	Intention to vote Leave	Intention to vote Leave	Intention to vote Leave
+						
+rshk_GBRZ	Res. import shock: Within-region (standardised)	0.0466***	0.0503***	0.0496***	0.0444**	0.0460***
+		(0.0168)	(0.0176)	(0.0170)	(0.0173)	(0.0175)
+lgrshk_GBR_w1_5_SCI_cZ	Res. import shock: 1st to 5th social neighbour (SCI-weighted; standardised)	0.0432**	0.0408**	0.0470***	0.0393**	0.00536
+		(0.0189)	(0.0172)	(0.0182)	(0.0189)	(0.0440)
+2.riskPoverty	At risk of poverty = 2, Yes	-0.0218				
+		(0.0267)				
+1b.riskPoverty#co.lgrshk_GBR_w1_5_SCI_cZ		0				
+		(0)				
+2.riskPoverty#c.lgrshk_GBR_w1_5_SCI_cZ		-0.00443				
+		(0.0274)				
+2.unemployed	Unemployed = 2, Yes		0.248***			
+			(0.0607)			
+1b.unemployed#co.lgrshk_GBR_w1_5_SCI_cZ			0			
+			(0)			
+2.unemployed#c.lgrshk_GBR_w1_5_SCI_cZ			0.0186			
+			(0.0678)			
+2.student	Student = 2, Yes			-0.635***		
+				(0.0908)		
+1b.student#co.lgrshk_GBR_w1_5_SCI_cZ				0		
+				(0)		
+2.student#c.lgrshk_GBR_w1_5_SCI_cZ				-0.0747		
+				(0.107)		
+2.polintov1hr	Followed political news online for over an hour in last 7 days = 2, Yes				-0.00804	
+					(0.0230)	
+1b.polintov1hr#co.lgrshk_GBR_w1_5_SCI_cZ					0	
+					(0)	
+2.polintov1hr#c.lgrshk_GBR_w1_5_SCI_cZ					-0.00900	
+					(0.0201)	
+2.bothparsbrit	Both parents UK-born = 2, Yes					0.185***
+						(0.0602)
+1b.bothparsbrit#co.lgrshk_GBR_w1_5_SCI_cZ						0
+						(0)
+2.bothparsbrit#c.lgrshk_GBR_w1_5_SCI_cZ						0.0289
+						(0.0431)
+						
+Observations		20,852	22,231	22,231	21,605	16,658
+Robust standard errors in parentheses						
+*** p<0.01, ** p<0.05, * p<0.1						
