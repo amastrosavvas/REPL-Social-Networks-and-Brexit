@@ -12,7 +12,7 @@
   * `4d_prep_sci_data.R` pre-processes data on interregional social ties.
   * `5a_get_cz_clusters.R` delineates commuting zones.
   * `6a_get_w_matrices.R` produces social and spatial weight matrices.
-  * `6b_calc_lagged_import_shocks.R` produces socially and spatially lagged measures of regional exposure to import competition
+  * `6b_calc_lagged_import_shocks.R` produces socially and spatially lagged measures of regional exposure to import competition.
   * `7a_get_regional_main_data.R` produces the regional dataset used in the main analysis.
   * `7b_get_indiv_main_data.R` produces the individual-level dataset used in the main analysis.
   * `8_get_plots.R` produces plots and maps included in the paper.
