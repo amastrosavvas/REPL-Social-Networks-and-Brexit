@@ -6,10 +6,11 @@ packages <-
     "tidyr"
   )
 
-for (p in packages){ 
-  if (! (p %in% installed.packages())){
-    install.packages(p)
-  }
+if(length(setdiff(packages, installed.packages())) > 0){
+  stop("The following required packages are not installed:\n\n  ",
+      paste(setdiff(packages, installed.packages()), collapse= "\n  "),
+      "\n\nPlease install these and rerun the script."
+    )
 }
 
 library(dplyr)   
