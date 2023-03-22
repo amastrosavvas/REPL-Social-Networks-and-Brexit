@@ -60,12 +60,11 @@ itl21x_outline_sf <-
   itl321x_sf %>%
   summarise()
 
-
 ggplot() +
   geom_sf(
     data = itl321x_sf,
-    color = "white",
-    size =.2
+    color = NA,
+    fill = "snow3"
   ) +
   theme_void() +
   geom_sf(
@@ -76,7 +75,7 @@ ggplot() +
   ) +
   geom_sf(
     data= itl21x_outline_sf,
-    color="lightgray",
+    color="snow3",
     alpha = 0,
     size=.18
   ) +
@@ -84,12 +83,12 @@ ggplot() +
     data = czmap_sf, 
     aes(label=zones_ha),
     color="#800000", 
-    size=2,
+    size = 2.8,
     fontface = "bold",
     family="sans"
   ) 
 
-ggsave(filename = "./output/plots/zonemap.png", height=3, width=3, device='png', dpi=700)
+ggsave(filename = "./output/plots/zonemap.pdf", width = 120, height = 130, dpi = 600, units = "mm", device='pdf')
 
 # COMMUTING ZONE PLOTS ---------------------------------------------------------
 
@@ -121,14 +120,13 @@ ggplot(zonedat) +
     strip.background = element_blank(),
     strip.placement = "outside",
     strip.text.x = element_text(size= 10, colour = "black"),
-    axis.title.y =element_text(size = 10 , colour = "black"),
+    axis.title.y = element_text(size = 10 , colour = "black"),
     panel.spacing.x = unit(0.5, "lines"),
     panel.grid.minor = element_blank()
   )  +
   scale_x_continuous(breaks = scales::pretty_breaks(7), limits = c(0, NA), expand = expansion(mult = c(0.05, 0.1)))
 
-
-ggsave(filename = "./output/plots/zonebars.png", height=4.5, width=4.5, device='png', dpi=700)
+ggsave(filename = "./output/plots/zonebars.pdf", width = 110, height = 105, dpi = 600, units = "mm", device='pdf')
 
 # LCD PLOTS  -------------------------------------------------------------------
 
@@ -154,7 +152,6 @@ nndat_LCD <-
   mutate(
     across(-contains("ITL321X"), ~as.numeric(.))
   )
-
 
 # Prepare  data for fig a/b LCD plots
 nndat_LCD_figab <-
@@ -255,7 +252,7 @@ ggplot(nndat_LCD_figab_means, aes(x = nn, y = mean.values, ymin = cil.values, ym
     guide = guide_legend(label.hjust = 0, title = "Measure")
   )
 
-ggsave(filename = "./output/plots/lcdplot.png", height=6.5, width=4, device='png', dpi=700)
+ggsave(filename = "./output/plots/lcdplot.pdf", width = 100, height = 160, dpi = 600, units = "mm", device='pdf')
 
 # Prepare data for fig c LCD plot
 LCD_figc_df <- list()
@@ -313,8 +310,7 @@ ggplot(
     axis.title = element_text(size=10, colour = "black")
   ) 
   
-
-ggsave(filename = "./output/plots/ovlplot.png", height = 4, width=4, device='png', dpi=700)
+ggsave(filename = "./output/plots/ovlplot.pdf", width = 100, height = 100, dpi = 600, units = "mm", device='pdf')
 
 # NEAREST NEIGHBOUR MAPS -------------------------------------------------------
 
@@ -392,23 +388,21 @@ levels(nndat3$ind) <- c("SCI", expression("SCI"["(-c)"]))
 ggplot() +
   geom_sf(
     data=itl321x_sf,
-    color="white",
-    size=.1
+    color= NA,
+    fill = "snow3"
   ) +
   theme_void() +
   geom_sf(
     data=nndat2,
-    color="white",
+    color= NA,
     fill="black",
-    alpha = 1,
-    size=.1
+    alpha = 1
   ) +
   geom_sf(
-    data=nndat3,
-    color="white",
+    data = nndat3,
+    color= NA,
     fill="#800000", 
-    alpha = 1,
-    size=.1
+    alpha = 1
   ) +
   facet_grid(
     ITL321XNM_O~ind,
@@ -422,9 +416,7 @@ ggplot() +
     panel.spacing.y = unit(-1, "lines")
   )
 
-ggsave(filename = "./output/plots/neighbourmap.png", height=8, width= 5.5, device='png', dpi=700)
-
-
+ggsave(filename = "./output/plots/neighbourmap.pdf", width = 140, height = 190, dpi = 600, units = "mm", device='pdf')
 
 # WORKPLACE VS RESIDENTIAL SHOCK SCATTERPLOT  ----------------------------------
 
@@ -453,7 +445,7 @@ ggplot(regdat, aes(y = shk_GBR/1000, x = rshk_GBR/1000)) +
   geom_text_repel(
     aes(label = ITL321XNM), 
     data = regdat[regdat$rshk_GBR_outliers >= 95,],
-    size = 3,
+    size = 2.8,
     min.segment.length = 0,
     segment.color = "NA",
     color = "grey40",
@@ -486,6 +478,7 @@ ggplot(regdat, aes(y = shk_GBR/1000, x = rshk_GBR/1000)) +
 
 ggsave(filename = "./output/plots/adjshockplot.png", height=3.5, width=4, device='png', dpi=700)
 
+ggsave(filename = "./output/plots/adjshockplot.pdf", width = 100, height = 85, dpi = 600, units = "mm", device='pdf')
 
 # LEAVE - SHOCK - LAGGED SHOCK MAPS --------------------------------------------
 
@@ -539,7 +532,7 @@ trimap_sf$ind <-
 
 ggplot(filter(trimap_sf), aes(fill = as.character(decile))) +
   geom_sf(
-    size=.01
+    colour = NA
   ) +
   coord_sf() +
   facet_wrap(~ind, ncol = 1, strip.position = "left") +
@@ -568,7 +561,7 @@ ggplot(filter(trimap_sf), aes(fill = as.character(decile))) +
     panel.spacing.y = unit(-1, "lines")
   )
 
-ggsave(filename = "./output/plots/trimap.png", height=8, width=4.5, device='png', dpi=700)
+ggsave(filename = "./output/plots/trimap.pdf", width = 120, height = 190, dpi = 600, units = "mm", device='pdf')
 
 # CLEAN UP ENVIRONMENT ---------------------------------------------------------
 
