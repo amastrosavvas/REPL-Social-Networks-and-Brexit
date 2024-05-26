@@ -10,7 +10,7 @@ Date: 2024-05-21
 * The R scripts numbered 0-9 perform all the prerequisite data collection and pre-processing steps, and produce the plots and some supplementary tables:
   
   * `0a_create_folders.R` creates the file structure of the repository.
-  * `0b_get_data.R` collects most of the prerequisite data using publicly available APIs and downloads (~15-30mins). 
+  * `0b_get_data.R` collects most required data using publicly available APIs and downloads (~15-30mins). 
   * `1a_get_lookups.R` produces geographic and product-industry lookups.
   * `1b_get_basemap.R` produces geometries for harmonised spatial classifications.
   * `2_prep_node_data.R` pre-processes data on regional voting, employment, demographics, and growth.
