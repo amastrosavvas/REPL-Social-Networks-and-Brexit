@@ -37,7 +37,6 @@ Date: 2024-05-21
   
 * Each R script checks your system for any missing R package dependencies and installs them. The relevant code can be found at the top of each script. Ensure that you are satisfied with installing the relevant packages if not already installed before running the script.
   
-* The script `0a_create_folders.R` has already been run in the provided repository, so this can be skipped.
 
 * Register with the [British Election Study](https://www.britishelectionstudy.com/wp-login.php?action=register) and download survey data for waves 7, 8, and 9 of the BES Internet Panel (in .dta format). Ensure that these are saved within the  `rawdata/voting` folder and that their respective names match those in the scripts (BES2015_w7_v23.0.dta, BES2015_w8_v23.0.dta, BES2015_w9_v23.0.dta at the time of publication).
     
