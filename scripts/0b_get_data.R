@@ -101,7 +101,8 @@ get.Comtrade <-
             content_lst <-
               lapply(
                 httr::content(output)$data[-1], function(x) {as.data.frame(t(unlist(x)))}
-              ) 
+              ) %>%
+              Filter(\(df) df$period <= 2007, .)
             
           }
           
