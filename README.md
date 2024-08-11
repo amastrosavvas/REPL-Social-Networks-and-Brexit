@@ -2,7 +2,7 @@
 
 This repository provides replication materials for tables and plots in the paper:
 
-> Mastrosavvas, A. (2024) “Social Networks and Brexit: Evidence from a Trade Shock”, *Regional Science and Urban Economics*,108, 104024. Available at: [https://doi.org/10.1016/j.regsciurbeco.2024.104024](https://doi.org/10.1016/j.regsciurbeco.2024.104024).
+> Mastrosavvas, A. (2024) “Social Networks and Brexit: Evidence from a Trade Shock”, *Regional Science and Urban Economics*, 108, 104024. Available at: [https://doi.org/10.1016/j.regsciurbeco.2024.104024](https://doi.org/10.1016/j.regsciurbeco.2024.104024).
 
 Date: 2024-05-21 
 
