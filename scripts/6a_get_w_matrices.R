@@ -102,27 +102,14 @@ nndat = expss::apply_labels(
   n_SCI_c = "Destination rank as neighbour of origin by SCI_c",
   n_LCDi_c = "Destination rank as neighbour of origin by LCDi_c",
   sall_SCI_c = "Destination in set of all neighbours of origin by SCI_c",  
-  s1_10_SCI_c = "Destination in set of 1-10 nearest neighbours of origin by SCI_c",    
-  s1_10_SCI =  "Destination  in set of 1-10 nearest neighbours of origin by SCI",
   sall_LCDi_c = "Destination in set of all neighbours of origin by LCDi_c",  
   s1_5_LCDi_c = "Destination in set of 1-5 nearest neighbours of origin by LCDi_c", 
-  s6_10_LCDi_c = "Destination in set of 6-10 nearest neighbours of origin by LCDi_c", 
-  s1_10_LCDi_c = "Destination in set of 1-10 nearest neighbours of origin by LCDi_c", 
-  s1_10_LCDi = "Destination in set of 1-10 nearest neighbours of origin by LCD", 
   wall_SCI_c = "Weights within set of all neighbours of origin by SCI_c",  
   w1_5_SCI_c = "Weights within set of 1-5 nearest neighbours of origin by SCI_c", 
-  w6_10_SCI_c = "Weights within set of 6-10 nearest neighbours of origin by SCI_c", 
-  w1_10_SCI_c = "Weights within set of 1-10 nearest neighbours of origin by SCI_c", 
-  w1_10_SCI = "Weights within set of 1-10 nearest neighbours of origin by SCI", 
   wall_LCDi_c = "Weights within set of all neighbours of origin by LCDi_c",  
   w1_5_LCDi_c = "Weights within set of 1-5 nearest neighbours of origin by LCDi_c", 
-  w6_10_LCDi_c = "Weights within set of 6-10 nearest neighbours of origin by LCDi_c", 
-  w1_10_LCDi_c = "Weights within set of 1-10 nearest neighbours of origin by LCDi_c", 
-  w1_10_LCDi = "Weights within set of 1-10 nearest neighbours of origin by LCDi", 
   weq1_5_SCI_c = "Equal weights - set of 1-5 nearest neighbours of origin by SCI_c", 
-  weq1_5_LCDi_c = "Equal weights - set of 1-5 nearest neighbours of origin by LCDi_c", 
-  weq6_10_SCI_c = "Equal weights - set of 6-10 nearest neighbours of origin by SCI_c",
-  weq6_10_LCDi_c = "Equal weights - set of 6-10 nearest neighbours of origin by LCDi_c"
+  weq1_5_LCDi_c = "Equal weights - set of 1-5 nearest neighbours of origin by LCDi_c"
 )
 
 
