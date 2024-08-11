@@ -41,6 +41,7 @@ get.folder <-
 
 folders <-
   c(
+    "rawdata",
     "rawdata/commuting", 
     "rawdata/employment", 
     "rawdata/geometries", 
