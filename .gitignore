@@ -3,3 +3,13 @@
 .RData
 .Ruserdata
 .Ruserdata
+rawdata/commuting
+rawdata/employment
+rawdata/exports
+rawdata/geometries
+rawdata/imports
+rawdata/lookups
+rawdata/migration
+rawdata/other
+rawdata/voting
+output
